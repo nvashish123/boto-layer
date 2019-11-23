@@ -1,0 +1,18 @@
+AWSTemplateFormatVersion: "2010-09-09"
+Transform: AWS::Serverless-2016-10-31
+Description: >
+  boto3 LambdaLayer
+
+  SAM Template for boto3 LambdaLayers
+
+Resources:
+  BotoLayer:
+    Type: AWS::Serverless::LayerVersion
+    Properties:
+      LayerName: BotoLayer
+      Description: "Layer for boto library"
+      ContentUri: "./"
+      CompatibleRuntimes:
+        - python2.7
+      LicenseInfo: "Available under the MIT-0 license."
+      RetentionPolicy: Retain
