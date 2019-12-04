@@ -11,8 +11,9 @@ Resources:
     Properties:
       LayerName: BotoLayer
       Description: Layer for boto library
-      ContentUri: s3://vashi-lambda-code/53580c43f7385b7075c85d9b2b4f435a
+      ContentUri: s3://vashi-lambda-code/b4de7256ca8524c719bd15e30917fa83
       CompatibleRuntimes:
       - python2.7
+      - python3.7
       LicenseInfo: Available under the MIT-0 license.
       RetentionPolicy: Retain

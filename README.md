@@ -9,8 +9,8 @@ To deploy the application, use the `sam deploy` command.
  
 ```bash
 pip install -r requirements.txt -t ./python/
-sam package  --output-template-file packaged.yaml  --s3-bucket vashi-lambda-code
-sam deploy --template-file packaged.yaml --stack-name LambdaBotoLayer --capabilities CAPABILITY_IAM
+sam package  --output-template-file packaged.yaml  --s3-bucket <your_s3_bucket>
+sam deploy --template-file packaged.yaml --stack-name <your_stack_name> --capabilities CAPABILITY_IAM
 
 ```
  
